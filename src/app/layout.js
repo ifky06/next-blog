@@ -1,7 +1,7 @@
 'use client';
 import './globals.css'
 import { Inter } from 'next/font/google'
-import Navbar from "@/app/Navbar";
+import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
       <body suppressHydrationWarning={true} className={inter.className}>
         {/*import navbar component*/}
         <Navbar darkmode={darkMode}/>
-        {/*{children}*/}
+        {children}
       </body>
     </html>
   )
